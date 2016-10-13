@@ -597,12 +597,16 @@ header .back {
 	}
 
 	#tabs .tab-photo {
-		width: 40em;
+		height: 25em;
+		width: auto;
+		max-width: 40em;
 	}
 
 	#tabs .prod-pictures li a img {
-	width: 6em;
-}
+		height: 5em;
+		width: auto;
+		max-width: 6em;
+	}
 
 	#gallery-products .products {
 		-webkit-flex-wrap: wrap;
