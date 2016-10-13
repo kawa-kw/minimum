@@ -1,0 +1,69 @@
+
+/*
+font-family: 'Poiret One', cursive;
+
+font-family: 'Stalemate', cursive;
+
+#F1F1F1 - color grey background
+#252525 - color grey text, footer border
+#C8CDCB - color grey border
+#191919 - color grey footer background
+#434343 - color grey text footer
+#757575 - color grey hover footer
+#FFF70C - color yellow
+*/
+
+html,
+body {
+	width: 100vw;
+	height: 100vh;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Poiret One', cursive;
+	font-size: 16px;
+	color: #333333;
+	position: relative;
+}
+
+body::after {
+	content: '';
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background: url(../img/subtle-dark-vertical.png) repeat;
+}
+
+p {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 2em;
+	margin: 2em;
+	z-index: 10;
+	/*background: url(../img/logo_do_strony_2_04.png) no-repeat top center;
+	background-size: 50% auto;
+	padding-top: 6em;*/
+}
+
+a {
+	font-size: 0.8em;
+	text-transform: uppercase;
+	text-decoration: underline;
+	color: #696969;
+	padding: 1em;	
+}
+
+a:hover {
+	color: #ccc;
+}
+
+
+
+
