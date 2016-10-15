@@ -1,0 +1,38 @@
+=flexbox($direction: row, $wrap: nowrap, $justify_content: space-between, $align_items: center, $flex_grow: 1, $display: flex)
+
+	@if $display == flex
+		display: -webkit-flex
+		display: -ms-flexbox
+		display: -moz-flexbox
+		display: flex
+
+	@if $display == inline-flex
+		display: -webkit-inline-box
+		display: -webkit-inline-flex
+		display: -moz-inline-flex
+		display: -ms-inline-flexbox
+		display: inline-flex
+
+	-webkit-flex-direction: $direction
+	-moz-flex-direction: $direction
+	-ms-flex-direction: $direction
+	flex-direction: $direction
+
+	-webkit-flex-wrap: $wrap
+	-moz-flex-wrap: $wrap
+	-ms-flex-wrap: $wrap
+	flex-wrap: $wrap
+
+	-webkit-justify-content: $justify_content
+	-moz-justify-content: $justify_content
+	-ms-justify-content: $justify_content
+	justify-content: $justify_content
+	align-content: $justify_content
+
+	-webkit-align-items: $align_items
+	-moz-align-items: $align_items
+	align-items: $align_items
+
+	-webkit-flex-grow: $flex_grow
+	-moz-flex-grow: $flex_grow
+	flex-grow: $flex_grow

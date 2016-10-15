@@ -1,0 +1,28 @@
+=gradient-vertical($from-color, $to-color, $from-color-stop: 15%, $to-color-stop: 85%, $direction-right: true)
+
+	@if $direction-right
+		background-image: -webkit-linear-gradient(right, $from-color $from-color-stop, $to-color $to-color-stop)
+		background-image: -moz-linear-gradient(right, $from-color $from-color-stop, $to-color $to-color-stop)
+		background-image: linear-gradient(to left, $from-color $from-color-stop, $to-color $to-color-stop)
+
+	@else
+		background-image: -webkit-linear-gradient(left, $from-color $from-color-stop, $to-color $to-color-stop)
+		background-image: -moz-linear-gradient(left, $from-color $from-color-stop, $to-color $to-color-stop)
+		background-image: linear-gradient(to right, $from-color $from-color-stop, $to-color $to-color-stop)
+
+=gradient-horizontal($from-color, $to-color, $from-color-stop: 15%, $to-color-stop: 85%, $direction-top: true)
+
+	@if $direction-top
+		background-image: -webkit-linear-gradient(top, $from-color $from-color-stop, $to-color $to-color-stop)
+		background-image: -moz-linear-gradient(top, $from-color $from-color-stop, $to-color $to-color-stop)
+		background-image: linear-gradient(to bottom, $from-color $from-color-stop, $to-color $to-color-stop)
+
+	@else
+		background-image: -webkit-linear-gradient(bottom, $from-color $from-color-stop, $to-color $to-color-stop)
+		background-image: -moz-linear-gradient(bottom, $from-color $from-color-stop, $to-color $to-color-stop)
+		background-image: linear-gradient(to top, $from-color $from-color-stop, $to-color $to-color-stop)
+
+=gradient-angle($direction, $color-start, $color-middle, $color-end)
+	background: -moz-linear-gradient($direction, $color-start, $color-middle, $color-end)
+	background: -webkit-linear-gradient($direction, $color-start, $color-middle, $color-end)
+	background: linear-gradient($direction, $color-start, $color-middle, $color-end)

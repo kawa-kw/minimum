@@ -1,0 +1,11 @@
+=transition($transition-property: all, $transition-time: 0.2s, $method: ease)
+	-webkit-transition: $transition-property $transition-time $method
+	-moz-transition: $transition-property $transition-time $method
+	-ms-transition: $transition-property $transition-time $method
+	-o-transition: $transition-property $transition-time $method
+	transition: $transition-property $transition-time $method
+
+=transition-delay($time: .35s)
+	-webkit-transition-delay: $time
+	-moz-transition-delay: $time
+	transition-delay: $time
