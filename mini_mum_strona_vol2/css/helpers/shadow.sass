@@ -1,0 +1,21 @@
+=box-shadow($color, $top: 1px, $left: 1px, $blur: 10px, $size: 1px, $inset: false)
+
+	@if $inset
+		-webkit-box-shadow: inset $top $left $blur $size $color
+		-moz-box-shadow: inset $top $left $blur $size $color
+		box-shadow: inset $top $left $blur $size $color
+
+	@else
+		-webkit-box-shadow: $top $left $blur $size $color
+		-moz-box-shadow: $top $left $blur $size $color
+		box-shadow: $top $left $blur $size $color
+
+=text-shadow($color, $top: 1px, $left: 1px, $blur: 10px)
+	-webkit-text-shadow: $top $left $blur $color
+	-moz-text-shadow: $top $left $blur $color
+	text-shadow: $top $left $blur $color
+
+=pressed-text-shadow($color, $top: 0, $left: 0.5px, $blur: 0)
+	-webkit-text-shadow: $top $left $blur $color
+	-moz-text-shadow: $top $left $blur $color
+	text-shadow: $top $left $blur $color

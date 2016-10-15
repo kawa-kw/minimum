@@ -1,0 +1,15 @@
+# compiled/optimized Python code
+*.py[co]
+
+# backup
+backup
+
+# built documentation
+docs/build
+docs/apidoc
+
+# sass sache
+css/.sass-cache
+css/*.css.map
+
+.DS_Store

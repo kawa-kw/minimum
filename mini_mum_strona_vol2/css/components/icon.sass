@@ -1,0 +1,36 @@
+=icon-simple($icon-unicode, $color: inherit, $icon-size: 25px, $after: true)
+	@if $after
+		&::after
+			content: $icon-unicode
+			display: inline-block
+			margin: 3px 5px
+			font:
+				family: $font-icon
+				size: $icon-size
+			color: $color
+
+	@else
+		&::before
+			content: $icon-unicode
+			display: inline-block
+			margin: 3px 7px
+			font:
+				family: $font-icon
+				size: $icon-size
+			color: $color
+
+// Change icon
+=icon-full($icon-unicode, $color: inherit, $icon-size: 25px, $position: absolute, $top: 50%, $left: 50%)
+	&::after
+		content: $icon-unicode
+		display: inline-block
+		position: $position
+		top: $top
+		left: $left
+		-webkit-transform: translate(-$left, -$top)
+		-moz-transform: translate(-$left, -$top)
+		transform: translate(-$left, -$top)
+		font:
+			family: $font-icon
+			size: $icon-size
+		color: $color

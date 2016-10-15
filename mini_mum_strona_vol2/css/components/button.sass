@@ -1,0 +1,17 @@
+=btn-color($color)
+	background-color: $color
+
+	&:hover
+		background-color: darken($color, 5%)
+
+// get rid of default btn properties
+=btn-clear
+	border: 0
+	background-color: transparent
+	box-shadow: none
+	outline: none
+
+// get rid of default input properties
+=input-clear
+	+btn-clear
+	border-radius: 0

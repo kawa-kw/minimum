@@ -1,0 +1,31 @@
+=transform($move-left: 50%, $move-vertical: 50%, $from-top: true)
+	@if $from-top
+		position: absolute
+		top: $move-vertical
+		left: $move-left
+		-webkit-transform: translate(-$move-left, -$move-vertical)
+		-moz-transform: translate(-$move-left, -$move-vertical)
+		transform: translate(-$move-left, -$move-vertical)
+
+	@else
+		position: absolute
+		bottom: $move-vertical
+		left: $move-left
+		-webkit-transform: translate(-$move-left, -$move-vertical)
+		-moz-transform: translate(-$move-left, -$move-vertical)
+		transform: translate(-$move-left, -$move-vertical)
+
+=transfrom-origin($o1: 50%, $o2: 50%)
+	-webkit-transform-origin: $o1 $o2
+	-moz-transform-origin: $o1 $o2
+	transform-origin: $o1 $o2
+
+=transform3d($x: 0, $y: 0, $z: 0)
+	-webkit-transform: translate3d($x, $y, $z)
+	-moz-transform: translate3d($x, $y, $z)
+	transform: translate3d($x, $y, $z)
+
+=perspective($length: 1200px)
+	-webkit-perspective: $length
+	-moz-perspective: $length
+	perspective: $length
