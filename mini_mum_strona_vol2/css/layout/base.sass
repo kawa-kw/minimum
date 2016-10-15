@@ -1,0 +1,203 @@
+html,
+body
+	width: 100vw
+	height: 100vh
+	box-sizing: border-box
+	font:
+		family: $font-basic
+		size: 16px
+	color: $color-text-body
+
+	*
+		box-sizing: border-box
+
+a
+	text-decoration: none
+	color: inherit
+	cursor: pointer
+
+h2
+	text:
+		align: center
+		transform: uppercase
+		font-weight: 400
+		color: $color-text-light
+
+h3
+	position: relative
+	padding: 25px
+	margin: 0 auto
+	font-size: 25px
+	text:
+		align: center
+		transform: uppercase
+
+.hidden
+	display: none
+
+section,
+footer,
+.contact-form,
+.gallery-products
+	position: relative
+	border-bottom: 1px solid $color-border
+
+.intro,
+.products,
+.gallery
+	height: 100vh
+	width: 100vw
+	position: relative
+
+	&::after
+		content: ''
+		position: absolute
+		height: 100vh
+		width: 100vw
+		background: url(../../img/subtle-dark-vertical.png), repeat
+
+.main-logo
+	+transform()
+	width: 60%
+
+	a
+		display: block
+		position: relative
+		width: 100%
+		height: auto
+		text-align: center
+
+		img
+			width: 100%
+			max-width: 368px
+			height: 100%
+			max-height: 220px
+
+.main-logo h1,
+.main-header .back
+	+text-max-indent()
+
+.main-header
+	position: fixed
+	top: 0
+	width: 100vw
+	height: 15vh
+	padding: 2% 3%
+	z-index: 10
+	background-color: $color-bacground-dark
+
+	nav
+		width: 60%
+		height: 96%
+
+	li
+		display: inline-block
+		position: relative
+		margin-left: 40px
+
+.back
+	display: block
+	height: 96%
+	width: 40%
+	background: url(../../img/Logo_bez_tla.svg) no-repeat center center
+	background-size: auto 100%
+
+.contact
+	+transform(100%)
+	right: 20px
+	display: inline-block
+	width: 60%
+	height: 100%
+	margin: 0
+	webkit-padding-start: 0
+	text-align: center
+
+	li
+		+transition($transition-time: 1s)
+		font-size: 16px
+		line-height: 16px
+		color: $color-text-light
+
+		&:hover
+			color: $color-white
+
+.social li
+	a
+		display: block
+		width: 100%
+		height: 100%
+		text-align: center
+
+		&::after
+			font:
+				family: $font-icon
+				size: 22px
+			color: $color-text-light
+
+	&.facebook a::after
+		content: '\f09a'
+
+	&.pinterest a::after
+		content: '\f231'
+
+	&.instagram a::after
+		content: '\f16d'
+
+.main-photo
+	position: relative
+	width: 100vw
+	height: 30vh
+
+	li
+		margin: 0
+
+.ei-slider,
+.ei-slider-large
+	display: block
+	width: 100%
+	height: 100%
+	z-index: -10
+
+.ei-title
+	display: none
+
+.main-products
+	width: 100vw
+	padding: 0 30px
+
+[class^="prod-"]
+	display: block
+	position: relative
+	width: 16em
+	height: 11.2em
+	max-width: 500px
+	max-height: 335px
+	margin: 4% auto
+	background:
+		size: 100% auto
+		repeat: no-repeat
+		position: bottom
+
+	a
+		display: block
+		position: absolute
+		bottom: 0
+		width: 100%
+		padding: 1em
+		font-size: 0.9em
+		text:
+			align: center
+			transform: uppercase
+		background-color: gba($color-white, .4)
+
+.prod-1
+	background-image: url(../../img/posciel4-L.jpg)
+
+.prod-2
+	background-image: url(../../img/poduszka_3L.jpg)
+
+.prod-3
+	background-image: url(../../img/posciel2-L.jpg)
+
+.prod-4
+	background-image: url(../../img/Domek_3L.JPG)

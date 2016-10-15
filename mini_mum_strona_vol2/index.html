@@ -28,7 +28,7 @@
   <!-- __________FIRST PAGE_________-->
   <div id="fsvs-body">
 
-	<section id="intro" class="slide"> <!-- INTRO -->
+	<section id="intro" class="intro slide"> <!-- INTRO -->
 	  <div class="main-logo">
 		<a href="#header">
 		  <img src="img/logo.png" alt="Witamy na stronie Mini-Mum">
@@ -43,42 +43,36 @@
 <!-- __________SECOND PAGE_________-->
 
 	<div class="viewport slide">
-	<header id="header">
+	<header id="header" class="main-header">
 	  <h3 class="hidden">Mini-mum witamy!</h3>
 	  <a class="back" href="#intro">MINI-MUM</a>
 	  <nav>
 		<ul class="contact">
 		  <li>
-			<div class="bar"></div>
 			<a id="linkAbout" href="#about">O NAS</a>
 			<div class="bar"></div>
 		  </li>
 		  <li>
-			<div class="bar"></div>
 			<a href="#gallery-products">PRODUKTY</a>
 			<div class="bar"></div>
 		  </li>
 		  <li>
-			<div class="bar"></div>
 			<a href="#contact-form">KONTAKT</a>
 			<div class="bar"></div>
 		  </li>
 		</ul>
 
 		<ul class="social">
-		  <li>
-			<div class="bar"></div>
-			<a class="facebook-top" href="https://www.facebook.com/PersonalizowaneAkcesoriaDlaDzieci/" target="blanc"></a>
-			<div class="bar"></div>
-		  </li>
-		  <li>
-			<div class="bar"></div>
-			<a class="pinterest-top" href="https://www.pinterest.com/minimum0692/" target="blanc"></a>
+		  <li class="facebook">
+			<a href="https://www.facebook.com/PersonalizowaneAkcesoriaDlaDzieci/" target="blanc"></a>
 			<div class="bar"></div>
 		  </li>
-		  <li>
+		  <li class="pinterest">
+			<a href="https://www.pinterest.com/minimum0692/" target="blanc"></a>
 			<div class="bar"></div>
-			<a class="instagram-top" href="https://instagram.com/minimum_official/" target="blanc"></a>
+		  </li>
+		  <li class="instagram">
+			<a href="https://instagram.com/minimum_official/" target="blanc"></a>
 			<div class="bar"></div>
 		  </li>
 		</ul>
@@ -132,22 +126,22 @@
 	</section> <!-- END OF MAIN-PHOTO -->
 	</div> <!-- END OF VIEWPORT -->
 
-	<div class="viewport slide">
+	<div class="viewport slide products">
 
-		<section id="main-products"> <!-- MAIN-PRODUCTS -->
+		<section class="main-products"> <!-- MAIN-PRODUCTS -->
 			<h3>Nasze produkty</h3>
-			<p class="prod-1 prod-img">
-			  <a  href="prod_1.html" class="descr">Personalizowana pościel</a>
-			</p>
-			<p class="prod-2 prod-img">
-			  <a  href="prod_2.html" class="descr">Personalizowana poszewka</a>
-			</p>
-			<p class="prod-3 prod-img">
-			  <a  href="prod_3.html" class="descr">Personalizowana pościel</a>
-			</p>
-			<p class="prod-4 prod-img">
-			  <a  href="prod_4.html" class="descr">Domek z kieszonką na skarb</a>
-			</p>
+			<div class="prod-1">
+			  <a  href="prod_1.html">Personalizowana pościel</a>
+		  </div>
+			<div class="prod-2">
+			  <a  href="prod_2.html">Personalizowana poszewka</a>
+		  </div>
+			<div class="prod-3">
+			  <a  href="prod_3.html">Personalizowana pościel</a>
+		  </div>
+			<div class="prod-4">
+			  <a  href="prod_4.html">Domek z kieszonką na skarb</a>
+		  </div>
 		<div class="clear"></div>
 		</section> <!-- END OF MAIN-PRODUCTS -->
 	</div> <!-- END OF .viewport -->
@@ -164,8 +158,8 @@
 	  </section> <!-- END OF ABOUT US -->
 	</div> <!-- END OF .viewport -->
 
-	<div class="viewport slide">
-	  <section id="gallery-products"> <!-- PRODUCTS-GALLERY  -->
+	<div class="viewport slide gallery">
+	  <section id="gallery-products" class="gallery-products"> <!-- PRODUCTS-GALLERY  -->
 		<h3>Galeria produktów</h3>
 		<ul class="products">
 		  <li>
@@ -225,22 +219,22 @@
 
 		  </div> <!-- End of .contact-form -->
 
-	<nav class="social" id="footer-social">
+	<nav id="footer-social">
 	  <h3 class="hidden">Mini-mum social-media kontakt</h3>
-		<ul>
-			<li>
-			  <a class="facebook" href="https://www.facebook.com/PersonalizowaneAkcesoriaDlaDzieci/" target="_blank"></a>
-			  <div class="bar"></div>
-			</li>
-			<li>
-			  <a class="pinterest" href="https://www.pinterest.com/minimum0692/" target="_blank"></a>
-			  <div class="bar"></div>
-			</li>
-			<li>
-			  <a class="instagram" href="https://instagram.com/minimum_official/" target="_blank"></a>
-			  <div class="bar"></div>
-			</li>
-		</ul>
+	  <ul class="social-footer">
+		<li class="facebook">
+		  <a href="https://www.facebook.com/PersonalizowaneAkcesoriaDlaDzieci/" target="blanc"></a>
+		  <div class="bar"></div>
+		</li>
+		<li class="pinterest">
+		  <a href="https://www.pinterest.com/minimum0692/" target="blanc"></a>
+		  <div class="bar"></div>
+		</li>
+		<li class="instagram">
+		  <a href="https://instagram.com/minimum_official/" target="blanc"></a>
+		  <div class="bar"></div>
+		</li>
+	  </ul>
 	</nav>
 
 	<footer id="footer-contact"> <!-- MAIN-FOOTER -->
