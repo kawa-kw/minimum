@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span,
 h1, h2, h3, h4, h5, h6, p, blockquote,
 a, em, img, q,
@@ -40,5 +41,207 @@ input:focus, input:active,
 textarea:focus,
 textarea:active {
   outline: none; }
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: "Poiret One", cursive;
+  font-size: 16px;
+  color: #333; }
+  html *,
+  body * {
+    box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer; }
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  text-font-weight: 400;
+  text-color: #aaa; }
+
+h3 {
+  position: relative;
+  padding: 25px;
+  margin: 0 auto;
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.hidden {
+  display: none; }
+
+section,
+footer,
+.contact-form,
+.gallery-products {
+  position: relative;
+  border-bottom: 1px solid #C8CDCB; }
+
+.intro,
+.products,
+.gallery {
+  height: 100vh;
+  width: 100vw;
+  position: relative; }
+  .intro::after,
+  .products::after,
+  .gallery::after {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: url(../../img/subtle-dark-vertical.png), repeat; }
+
+.main-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 60%; }
+  .main-logo a {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center; }
+    .main-logo a img {
+      width: 100%;
+      max-width: 368px;
+      height: 100%;
+      max-height: 220px; }
+
+.main-logo h1,
+.main-header .back {
+  text-indent: 115%;
+  white-space: nowrap;
+  overflow: hidden; }
+
+.main-header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 15vh;
+  padding: 2% 3%;
+  z-index: 10;
+  background-color: #191919; }
+  .main-header nav {
+    width: 60%;
+    height: 96%; }
+  .main-header li {
+    display: inline-block;
+    position: relative;
+    margin-left: 40px; }
+
+.back {
+  display: block;
+  height: 96%;
+  width: 40%;
+  background: url(../../img/Logo_bez_tla.svg) no-repeat center center;
+  background-size: auto 100%; }
+
+.contact {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  -webkit-transform: translate(-100%, -50%);
+  -moz-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+  right: 20px;
+  display: inline-block;
+  width: 60%;
+  height: 100%;
+  margin: 0;
+  webkit-padding-start: 0;
+  text-align: center; }
+  .contact li {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    font-size: 16px;
+    line-height: 16px;
+    color: #aaa; }
+    .contact li:hover {
+      color: #fff; }
+
+.social li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+  .social li a::after {
+    font-family: FontAwesome;
+    font-size: 22px;
+    color: #aaa; }
+.social li.facebook a::after {
+  content: ""; }
+.social li.pinterest a::after {
+  content: ""; }
+.social li.instagram a::after {
+  content: ""; }
+
+.main-photo {
+  position: relative;
+  width: 100vw;
+  height: 30vh; }
+  .main-photo li {
+    margin: 0; }
+
+.ei-slider,
+.ei-slider-large {
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: -10; }
+
+.ei-title {
+  display: none; }
+
+.main-products {
+  width: 100vw;
+  padding: 0 30px; }
+
+[class^="prod-"] {
+  display: block;
+  position: relative;
+  width: 16em;
+  height: 11.2em;
+  max-width: 500px;
+  max-height: 335px;
+  margin: 4% auto;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+  [class^="prod-"] a {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+    font-size: 0.9em;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: gba(#fff, 0.4); }
+
+.prod-1 {
+  background-image: url(../../img/posciel4-L.jpg); }
+
+.prod-2 {
+  background-image: url(../../img/poduszka_3L.jpg); }
+
+.prod-3 {
+  background-image: url(../../img/posciel2-L.jpg); }
+
+.prod-4 {
+  background-image: url(../../img/Domek_3L.JPG); }
 
 /*# sourceMappingURL=main.css.map */
