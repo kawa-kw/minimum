@@ -11,3 +11,6 @@ class Post(models.Model):
 
 	def __unicode__(self):
 		return self.title
+
+	def __str__(self):
+		return self.title
