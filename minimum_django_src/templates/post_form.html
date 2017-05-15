@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block head_title %}
+	{{ instance.title }} | {{ block.super }}
+{% endblock head_title %}
+
+{% block content %}
+	<h1>form</h1>
+
+	<form method="POST" action="" enctype="multipart/form-data">
+		{% csrf_token %}
+		{{ form.as_p }}
+		<button>create post</button>
+	</form>
+
+{% endblock content %}

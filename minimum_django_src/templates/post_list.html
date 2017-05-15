@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block head_title %}
+	{{ instance.title }} | {{ block.super }}
+{% endblock head_title %}
+
+{% block content %}
+	<!-- <h1>Jesteś zalogowany</h1> -->
+	<h1>hello base.html, tytuł to: {{ title }}</h1>
+
+	{% for obj in object_list %}
+		{% if obj.image %}
+			<img src="{{ obj.image.url }}" alt="zdjecie">
+		{% endif %}
+		{% url 'posts:detail' id=obj.id %}
+		<a href="{{ obj.get_absolute_url }}">{{ obj.title }}</a><br>
+		{{ obj.content|linebreaks }} <br>
+		{{ obj.timestamp }} <br>
+		{{ obj.updated }} <br>
+		{{ obj.id }} <br>
+	{% endfor %}
+
+	<div class="pagination">
+		<span class="step-links">
+			{% if object_list.has_previous %}
+				<a href="?{{ page_request_var }}={{ object_list.previous_page_number }}">previous</a>
+			{% endif %}
+
+			<span class="current">
+				Page {{ object_list.number }} of {{ object_list.paginator.num_pages }}.
+			</span>
+
+			{% if object_list.has_next %}
+				<a href="?{{ page_request_var }}={{ object_list.next_page_number }}">next</a>
+			{% endif %}
+		</span>
+	</div>
+{% endblock content %}

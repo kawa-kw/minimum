@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block head_title %}
+	{{ instance.title }} | {{ block.super }}
+{% endblock head_title %}
+
+{% block content %}
+	<h1>hello post_detail.html</h1>
+	<h1>To jest post {{ title }}</h1>
+
+	{{ instance.title }} <br>
+	{{ instance.content|linebreaks }} <br>
+	{{ instance.timestamp }} <br>
+	{{ instance.updated }} <br>
+	{{ instance.id }} <br>
+
+	{% if instance.image %}
+		<img src="{{ instance.image.url }}" alt="zdjecie">
+	{% endif %}
+
+{% endblock content %}
