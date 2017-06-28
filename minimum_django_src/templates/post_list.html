@@ -12,7 +12,7 @@
 		{% if obj.image %}
 			<img src="{{ obj.image.url }}" alt="zdjecie">
 		{% endif %}
-		{% url 'posts:detail' id=obj.id %}
+		{% url 'posts:detail' obj.slug %}
 		<a href="{{ obj.get_absolute_url }}">{{ obj.title }}</a><br>
 		{{ obj.content|linebreaks }} <br>
 		{{ obj.timestamp }} <br>
